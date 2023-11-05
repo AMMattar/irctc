@@ -2,3 +2,29 @@
     background: rgba(248, 248, 248, 0.50);
     backdrop-filter: blur(10px);
 }
+
+.selected-div {
+    width: 83px;
+    height: 37px;
+    border-radius: 40px;
+    background: #066086;
+}
+
+.selected-div-typography {
+    margin-top: 17px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.profile-pic {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    background-color: #009DDB;
+    border-radius: 38px;
+    color: #FFF;
+}

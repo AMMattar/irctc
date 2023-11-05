@@ -1,0 +1,39 @@
+.card-container {
+    width: 320px;
+    height: 297px;
+    border-radius: 10px;
+    border: 1px solid #D9D0E3;
+    position: relative;
+    margin-top: 20px;
+}
+
+.trip-image {
+    width: 288px;
+    height: 205px;
+    flex-shrink: 0;
+    margin-top: -20px;
+    z-index: 1;
+}
+
+.trip-typography {
+    color: #667B85;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.trip-strong {
+    color: #002234;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.container-typography {
+    width: 310px;
+    margin-left: -45px;
+}
