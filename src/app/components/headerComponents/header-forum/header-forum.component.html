@@ -1,106 +1,59 @@
-<html>
-<head>
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.header {
-  background-color: #1a73e8;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header a {
-  color: white;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.search {
-  background-color: white;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.search input {
-  border: 1px solid #d9d9d9;
-  height: 40px;
-  width: 150px;
-  padding: 10px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-}
-
-.search button {
-  border: none;
-  height: 40px;
-  width: 120px;
-  background-color: #1a73e8;
-  color: white;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-}
-
-.search img {
-  height: 20px;
-  width: 20px;
-  margin-left: 10px;
-}
-
-.recent {
-  background-color: #f0f0f0;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.recent p {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #808080;
-  margin-right: 20px;
-}
-
-.recent span {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: black;
-  margin-right: 20px;
-}
-</style>
-</head>
-<body>
-<div class="header">
-  <a href="#">BOOK TICKET</a>
-  <a href="#">PNR STATUS</a>
-  <a href="#">TRAIN STATUS</a>
+<div class="forum-container">
+  <div class="d-flex mx-3">
+    <p class="m-3 select-typography" style="color: #009DDB;"><strong>Book Ticket</strong></p>
+    <p class="m-3 select-typography">PNR Status</p>
+    <p class="m-3 select-typography">Train Status</p>
+  </div>
+  <div class="border-top" style="width: 90%; margin-left: 30px;">
+    <div class="d-flex flex-column flex-sm-row justify-content-center my-3" style="margin-left: -200px;">
+      <label class="toggle-container" style="margin-right: -60px;">
+        <input type="checkbox" class="toggle-checkbox">
+        <span class="slider"></span>
+      </label>
+      <p class="mx-5">Round Trip</p>
+      <label class="toggle-container" style="margin-right: -10px;">
+        <input type="checkbox" class="toggle-checkbox">
+        <span class="slider"></span>
+      </label>
+      <p>Flexible Date</p>
+    </div>
+    <form action="" style="margin-top: -20px; margin-bottom: 20px;">
+      <div class="form-row d-flex justify-content-between" style="margin-bottom: 15px;">
+        <div class="form-group col-md-5">
+          <input type="text" class="form-control" id="inputEmail4" placeholder="From">
+        </div>
+        <div> <img src="../../../../assets/images/swap.svg" alt=""></div>
+        <div class="form-group col-md-5">
+          <input type="text" class="form-control" id="inputPassword4" placeholder="To">
+        </div>
+      </div>
+      <div class="form-row d-flex justify-content-between">
+        <div class="form-group col-md-5">          
+          <input type="text" class="form-control" id="inputEmail4" placeholder="Departure">
+        </div>
+        <div class="form-group col-md-5">
+          <select id="inputState" class="form-control">
+            <option selected>General</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div> <img src="../../../../assets/images/search.svg" alt=""></div>
+      </div>
+    </form>
+  </div>
+  <div class="border-top" style="width: 90%; margin-left: 30px;">
+    <div class="my-3">
+      <strong>
+        Recent Search
+      </strong>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <p class="recent-search-words">New Delhi</p>
+      <p class="recent-search-words">Prayagraj</p>
+      <p class="recent-search-words">Vijayawada</p>
+      <p class="recent-search-words">Chennai</p>
+      <p class="recent-search-words">Indore</p>
+      <p class="recent-search-words">Lona Wala</p>
+    </div>
 </div>
-<div class="search">
-  <input type="text" placeholder="From">
-  <input type="text" placeholder="To">
-  <input type="text" placeholder="Departure">
-  <input type="text" placeholder="General">
-  <button>Flexible Date</button>
-  <img src="search.png" alt="Search icon">
 </div>
-<div class="recent">
-  <p>Recent Search</p>
-  <span>New Delhi</span>
-  <span>Prayagraj</span>
-  <span>Vijayawada</span>
-  <span>Chennai</span>
-  <span>Indore</span>
-  <span>Lona Wala</span>
-</div>
-</body>
-</html>
